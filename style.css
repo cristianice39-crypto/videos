@@ -1,4 +1,4 @@
-/* ==/* ===== RESET ===== */
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
@@ -103,18 +103,38 @@ header {
     margin-bottom: 30px;
 }
 
+/* ===== SECCIÓN VIDEOS EN 2 COLUMNAS ===== */
+.grid-videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    align-items: start;
+}
+
+/* El subtítulo ocupa las 2 columnas */
+.grid-videos .subtitulo {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-bottom: 30px;
+}
+
 /* ===== BLOQUE VIDEO ===== */
 .bloque-video {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    margin: 60px auto;
+    margin: 0;
     padding: 30px;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
+    max-width: 100%;
 }
 
 .imagen-brazo {
@@ -197,7 +217,11 @@ header {
     }
     .menu a { font-size: 0.95rem; }
     .seccion { width: 95%; margin: 30px auto; }
-    .bloque-video { padding: 20px; margin: 40px auto; gap: 20px; }
+    .grid-videos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .bloque-video { padding: 20px; gap: 20px; }
     .imagen-brazo { max-width: 280px; }
     .subtitulo-video { font-size: 1rem; }
     .btn-youtube { font-size: 1rem; padding: 12px 28px; }
@@ -209,7 +233,7 @@ header {
     .menu { gap: 12px; padding: 12px 10px; }
     .menu a { font-size: 0.85rem; }
     .subtitulo { font-size: 1.2rem; padding: 8px 15px; }
-    .bloque-video { padding: 15px; margin: 30px auto; }
+    .bloque-video { padding: 15px; }
     .imagen-brazo { max-width: 220px; }
     .subtitulo-video { font-size: 0.9rem; letter-spacing: 0.3px; }
     .btn-youtube { font-size: 0.9rem; padding: 10px 22px; }
