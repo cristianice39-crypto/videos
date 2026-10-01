@@ -1,52 +1,58 @@
-<!-- BARRA SUPERIOR -->
-<div class="barra-superior">
-    <header>
-        <h1 class="titulo-principal">Proyecto Brazo Robótico</h1>
-    </header>
-    <nav class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="videos.html">Videos</a>
-    </nav>
-</div>
-<link rel="stylesheet" href="style.css">
-<!-- SECCIÓN VIDEOS -->
-<section id="videos" class="seccion">
-    <h2 class="subtitulo">Videos</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Proyecto Brazo Robótico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- ===== VIDEO 1 ===== -->
-    <div class="bloque-video">
-
-        <!-- Imagen del brazo ya hecho -->
-        <div class="imagen-brazo">
-            <img src="img/brazo-final.jpg" alt="Brazo robótico terminado">
-        </div>
-
-        <!-- Subtítulo resaltante -->
-        <h3 class="subtitulo-video">Video de donde tomamos ejemplo del brazo - YouTube</h3>
-
-        <!-- Botón a YouTube -->
-        <a href="https://www.youtube.com/watch?v=R7pfTQcmXE4" 
-           target="_blank" 
-           class="btn-youtube">
-            ▶ Ver en YouTube
-        </a>
+    <!-- BARRA SUPERIOR -->
+    <div class="barra-superior">
+        <header>
+            <h1 class="titulo-principal">Proyecto Brazo Robótico</h1>
+        </header>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="videos.html">Videos</a>
+        </nav>
     </div>
 
-    <!-- ===== ESPACIO PARA MÁS VIDEOS ===== -->
-    <!-- Copia el bloque <div class="bloque-video"> ... </div> para agregar más -->
-    
-    <div class="bloque-video">
-        <div class="imagen-brazo">
-            <img src="img/brazo-final-2.jpg" alt="Brazo robótico terminado 2">
+    <!-- SECCIÓN VIDEOS EN 2 COLUMNAS -->
+    <section id="videos" class="seccion grid-videos">
+        <h2 class="subtitulo">Videos</h2>
+
+        <!-- ===== VIDEO 1 ===== -->
+        <div class="bloque-video">
+            <div class="imagen-brazo">
+                <img src="img1.jpg" alt="Brazo robótico terminado">
+            </div>
+            <h3 class="subtitulo-video">Video de donde tomamos ejemplo del brazo - YouTube</h3>
+            <a href="https://www.youtube.com/watch?v=R7pfTQcmXE4" 
+               target="_blank" 
+               class="btn-youtube">
+                ▶ Ver en YouTube
+            </a>
         </div>
 
-        <h3 class="subtitulo-video">Video de donde tomamos ejemplo del brazo - YouTube</h3>
+        <!-- ===== VIDEO 2 ===== -->
+        <div class="bloque-video">
+            <div class="imagen-brazo">
+                <img src="img/brazo-final-2.jpg" alt="Brazo robótico terminado 2">
+            </div>
+            <h3 class="subtitulo-video">Video de donde tomamos ejemplo del brazo - YouTube</h3>
+            <a href="https://www.youtube.com/watch?v=TU_VIDEO_ID_2" 
+               target="_blank" 
+               class="btn-youtube">
+                ▶ Ver en YouTube
+            </a>
+        </div>
 
-        <a href="https://www.youtube.com/watch?v=TU_VIDEO_ID_2" 
-           target="_blank" 
-           class="btn-youtube">
-            ▶ Ver en YouTube
-        </a>
-    </div>
+        <!-- ===== ESPACIO PARA MÁS VIDEOS ===== -->
+        <!-- Copia el bloque <div class="bloque-video"> ... </div> para agregar más -->
 
-</section>
+    </section>
+
+</body>
+</html>
